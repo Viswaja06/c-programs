@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int c,f,a;
+    printf("enter your class:",c);
+    scanf("%d",&c);
+    printf("enter no. of subjects you have failed:",f);
+    scanf("%d",&f);
+    printf("enter your choice:",a);
+    scanf("%d",&a);
+    switch(a)
+    {
+        case 1:
+        {
+            if(c==1&&f<=3)
+              printf("you have grace marks of 5 for each subject");
+            else
+              printf("you have no grace marks");
+            break;
+        }
+        case 2:
+        {
+            if(c==2&&f<=2)
+              printf("you have a grace mark of 4 for each subject");
+            else
+              printf("you have no grace mark");
+            break;
+        }
+        case 3:
+        {
+            if(c==3&&f==1)
+              printf("you have a grace mark of 5 for each subject");
+            else
+              printf("you have no grace marks");
+            break;
+        }
+    }
+    return 0;
+    }

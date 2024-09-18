@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+   double fact=1,i,num,a;
+   printf("enter a number:",num);
+   scanf("%lf",&num);
+   for(i=1;i<=num;i++)
+   {
+       
+       fact=fact*i;
+       a=num/fact;
+   }
+   printf("\nfactorial:%lf",a);
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int r,min=9,max=0,i,num;
+    printf("\nenter a number:",num);
+    scanf("%d",&num);
+    for(i=num;i!=0;i=i/10)
+    {
+        r=i%10;
+        if(r>max)
+         max=r;
+        if(r<min)
+         min=r;
+    }
+    printf("max=%d\n min=%d\n range=%d\n",max,min,max-min);
+    return 0;
+}
